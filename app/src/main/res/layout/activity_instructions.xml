@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:gravity="center_horizontal"
+    tools:context=".intructions">
+    <!-- initials ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- makes a Linear Layout in the Scroll View-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <!-- adds all the instruction pictures to the scroll view-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:src="@drawable/ins1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:src="@drawable/ins2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:src="@drawable/ins3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:src="@drawable/ins4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:src="@drawable/ins5" />
+            <!-- add back button -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:onClick="back"
+                android:text="Back"
+                android:textColor="@color/grey"
+                android:textSize="40dp" />
+            <!-- adds play button -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:onClick="play"
+                android:text="PLay"
+                android:textColor="@color/grey"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
